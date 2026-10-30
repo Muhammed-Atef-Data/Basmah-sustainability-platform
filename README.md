@@ -1,110 +1,149 @@
-# Basmah – Sustainable E-Commerce Platform
+# Basmah | Sustainable E-Commerce Platform 🌱
 
-Basmah is a sustainability-focused e-commerce graduation project designed to help consumers discover and evaluate eco-friendly products through sustainability information, product ratings, and environmental impact insights.
+Basmah is a sustainability-focused e-commerce platform developed as a university graduation project. It aims to encourage sustainable shopping by helping consumers discover and evaluate eco-friendly products through sustainability scores and environmental impact insights.
 
-> The project was previously named **EcoMart** in the source code. Basmah is the final project name.
+## 🎯 Project Overview
 
-## Project Overview
+Traditional e-commerce platforms mainly focus on product price, quality, and customer reviews. Basmah introduces sustainability as an additional factor in the shopping experience, helping consumers make more environmentally conscious purchasing decisions.
 
-Basmah aims to connect consumers with more sustainable shopping choices and provide a marketplace workflow for customers, companies, and administrators.
+## ✨ Key Features
 
-## Key Features
+- **Sustainable Product Marketplace:** Browse and explore eco-friendly products.
+- **Sustainability Scoring:** Evaluate products based on sustainability-related criteria.
+- **Product Comparison:** Support more informed and sustainable purchasing decisions.
+- **Carbon Footprint Calculator:** Explore the environmental impact of everyday choices.
+- **User Accounts:** Registration, authentication, and profile management.
+- **Shopping Experience:** Cart, wishlist, checkout, and order management.
+- **Company Dashboard:** Product submission and business analytics.
+- **Admin Dashboard:** Manage users, products, company applications, and platform activities.
+- **Reviews & Ratings:** Share product feedback.
+- **Educational Content:** Learn more about sustainability through the platform.
 
-- Customer registration and authentication
-- Product browsing and product details
-- Shopping cart, wishlist, and order management
-- Company applications and product submission workflows
-- Admin review and approval workflows
-- Product sustainability scores and eco badges
-- Carbon-saved tracking
-- Company and admin analytics dashboards
-- Product image uploads
+## 🛠️ Technologies Used
 
-## Technology Stack
-
-**Frontend**
-- React
+### Frontend
+- React.js
 - Vite
+- JavaScript
+- Tailwind CSS
 - React Router
 - TanStack Query
-- Tailwind CSS
 - Framer Motion
 - Recharts
 
-**Backend**
+### Backend
 - Node.js
 - Express.js
+- REST APIs
 - MongoDB
 - Mongoose
-- JSON Web Tokens (JWT)
+- JWT Authentication
 - bcryptjs
 - Multer
 
-## Repository Structure
+## 📁 Project Structure
 
 ```text
 Basmah-sustainability-platform/
+│
+├── frontend/
+│   ├── public/
+│   └── src/
+│       ├── api/
+│       ├── components/
+│       ├── lib/
+│       └── pages/
+│
 ├── backend/
 │   ├── config/
+│   ├── data/
 │   ├── middleware/
 │   ├── models/
 │   ├── routes/
 │   ├── utils/
-│   ├── data/
 │   └── server.js
-├── frontend/
-│   ├── public/
-│   └── src/
+│
 ├── screenshots/
 └── README.md
 ```
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
+- Node.js 18+
+- MongoDB (local or MongoDB Atlas)
+- npm
 
-- Node.js 18 or later
-- MongoDB local instance or MongoDB Atlas database
+### 1. Clone the Repository
 
-### Backend Setup
+```bash
+git clone https://github.com/Muhammed-Atef-Data/Basmah-sustainability-platform.git
+cd Basmah-sustainability-platform
+```
+
+### 2. Backend Setup
 
 ```bash
 cd backend
 npm install
-cp .env.example .env
 ```
 
-Update the values in `backend/.env` with your own local configuration. Then run:
+Create a `.env` file based on `.env.example` and configure your environment variables:
+
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secure_random_secret
+JWT_EXPIRES_IN=30d
+CLIENT_URL=http://localhost:5173
+```
+
+Start the backend:
 
 ```bash
 npm run dev
 ```
 
-The backend uses port `5000` by default.
+### 3. Frontend Setup
 
-### Frontend Setup
-
-Open a second terminal:
+Open a new terminal:
 
 ```bash
 cd frontend
 npm install
-cp .env.example .env
+```
+
+Create a `.env` file based on `.env.example`:
+
+```env
+VITE_API_URL=http://localhost:5000/api
+```
+
+Start the frontend:
+
+```bash
 npm run dev
 ```
 
-Set `VITE_API_URL` in the frontend environment file to the backend API URL (by default `http://localhost:5000/api`).
+## 📸 Screenshots
 
-## Screenshots
+Application screenshots will be added here to demonstrate the platform's interface and main features.
 
-Screenshots of the application will be added here.
+## 👥 Project Team
 
-## Project Team
+**University Graduation Project – Business Information Systems (BIS)**
 
-This is a collaborative graduation project. Team member details and individual contributions can be added here after they are confirmed by the team.
+Team members:
+- Mohamed Atef Abdelhamid
+- Omar Sayed
+- Basmala Nayer
 
-## Notes
+Supervisor: Mohamed K. Elhadad
 
-- Never commit `.env` files, database credentials, JWT secrets, API keys, or private user data.
-- The seed script contains demonstration account credentials. Keep this repository private until those credentials and all demo data have been reviewed and sanitized before any public release.
-- The source code may contain legacy `ecomart` naming from the project's earlier name.
+## 🌍 Project Vision
+
+Basmah aims to make sustainable shopping more accessible by connecting consumers with environmentally conscious products and encouraging more responsible purchasing decisions.
+
+---
+
+**Basmah – Every Choice Leaves a Footprint. 🌱**
