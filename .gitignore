@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Build output
+dist/
+ build/
+
+# Runtime uploads
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Logs and OS/editor files
+*.log
+.DS_Store
+.vscode/
