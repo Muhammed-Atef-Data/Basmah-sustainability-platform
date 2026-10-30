@@ -127,6 +127,17 @@ npm run dev
 
 ## 📸 Screenshots
 
+### Basmah Home Page
+![Basmah Home Page](screenshots/Basmah%20Home%20Page.jpeg)
+
+### Carbon Footprint Calculator
+![Carbon Footprint Calculator](screenshots/Carbon%20Footprint%20Calculator.jpeg)
+
+### Card Checkout
+![Card Checkout](screenshots/Card%20Checkout.jpeg)
+
+### Product Details
+![Product Details](screenshots/Product%20Details.jpeg)
 Application screenshots will be added here to demonstrate the platform's interface and main features.
 
 ## 👥 Project Team
